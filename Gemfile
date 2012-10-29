@@ -6,6 +6,7 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg', '0.12.1'
+gem 'bootstrap-sass', '2.1.0.1'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
