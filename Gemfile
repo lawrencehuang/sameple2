@@ -7,9 +7,13 @@ gem 'rails', '3.2.8'
 
 gem 'pg', '0.12.1'
 gem 'bootstrap-sass', '2.1.0.1'
+gem 'bcrypt-ruby'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
+end
+group :development do
+  gem 'annotate'
 end
 
 group :test do
