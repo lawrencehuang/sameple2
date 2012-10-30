@@ -10,6 +10,7 @@ gem 'bootstrap-sass', '2.1.0.1'
 gem 'bcrypt-ruby'
 
 group :development, :test do
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '2.11.0'
 end
 group :development do
