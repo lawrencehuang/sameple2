@@ -2,4 +2,12 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+
+# en:
+#   activerecord:
+#     attributes:
+#       user:
+#         password_digest: "神奇密碼"
+#         password : "密碼"
+#         password_confirmation : "密碼確認"
+#         email	: "電郵"
