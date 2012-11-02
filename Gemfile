@@ -8,6 +8,8 @@ gem 'rails', '3.2.8'
 gem 'pg', '0.12.1'
 gem 'bootstrap-sass', '2.1.0.1'
 gem 'bcrypt-ruby'
+gem 'faker'
+gem 'will_paginate'
 
 group :development, :test do
   gem 'factory_girl_rails'
