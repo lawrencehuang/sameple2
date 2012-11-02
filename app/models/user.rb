@@ -12,6 +12,7 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :name, :password, :password_confirmation
   has_secure_password   
+  has_many :microposts, dependent: :destroy
 
   # before_save { |user| user.email = email.downcase }
   before_save {self.email = self.email.downcase}
@@ -31,6 +32,10 @@ class User < ActiveRecord::Base
   # 										:on => :create, :message => "is invalid"
   # validates_uniqueness_of :email, :case_sensitive => false, 
   # 												:on => :create, :message => "must be unique"
+
+  def feed
+    Micropost.where("user_id=?",self.id)  
+  end
 
   private
     def create_remember_token
